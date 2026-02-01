@@ -14,7 +14,14 @@ from transformers import (
 # -----------------------------
 
 app = FastAPI(title="PDF Translator API (EN->ES)", version="1.0")
+"""
+con este comando ejecutamos la api
 
+$env:TORCH_NUM_THREADS="2"
+>> $env:TORCH_NUM_INTEROP_THREADS="1"
+>> $env:TOKENIZERS_PARALLELISM="false"
+>> uvicorn app.main:app --host 0.0.0.0 --port 8000
+"""
 # -----------------------------
 # Config
 # -----------------------------
