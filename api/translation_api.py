@@ -9,6 +9,9 @@ from transformers import (
     AutoTokenizer,
     AutoModelForSeq2SeqLM,
 )
+# -----------------------------
+# Esta es la rama de la API de traducción
+# -----------------------------
 
 app = FastAPI(title="PDF Translator API (EN->ES)", version="1.0")
 
