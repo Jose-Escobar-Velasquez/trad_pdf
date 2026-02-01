@@ -3,7 +3,7 @@ import streamlit as st
 import fitz  # PyMuPDF
 import numpy as np
 
-#esta es mi rama washo
+#esta es mi rama washo ergerg e
 # -------------------- Texto helpers --------------------
 def normalize_text(s: str) -> str:
     s = s.replace("\ufb01", "fi").replace("\ufb02", "fl").replace("\u00ad", "")
