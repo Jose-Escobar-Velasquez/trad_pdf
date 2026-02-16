@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 
 class TranslateRequest(BaseModel):
     texts: List[str] = Field(..., description="Lista de textos EN (ej. secciones del PDF)")
-    engine: Optional[Literal["opus", "nllb"]] = Field(default=None, description="Motor a usar")
+    engine: Optional[Literal["opus", "nllb", "apertium"]] = Field(default=None, description="Motor a usar")
     batch_size: int = Field(default=8, ge=1, le=64)
 
 
